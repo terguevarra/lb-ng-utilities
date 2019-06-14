@@ -44,8 +44,6 @@
         this.getBrowserInfo = getBrowserInfo;
         this.getSumArray = getSumArray;
         this.angularJsonStringify = angularJsonStringify;
-        this.urlSafeBase64Encode = urlSafeBase64Encode;
-        this.urlSafeBase64Decode = urlSafeBase64Decode;
 
         function getQueryStringValueByName(_queryname) {
             _queryname = _queryname.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
