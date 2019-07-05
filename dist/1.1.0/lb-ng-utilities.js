@@ -1,3 +1,18 @@
+/*! 
+ PROJECT: lb-ng-utilities 
+ VERSION: 1.1.0 
+ AUTHOR: Ruther John Guevarra 
+ GITHUB: https://github.com/terguevarra/
+ LATEST BUILD DATE AND TIME: July 05, 2019 03:49 PM PHILIPPINE TIME*/
+(function(){
+    'use strict';
+
+    var moduleName = 'lbNgUtilities';
+
+    var appDependencies = [];
+
+    angular.module(moduleName, appDependencies);
+})();
 (function () {
     'use strict';
 
