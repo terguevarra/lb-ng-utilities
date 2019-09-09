@@ -411,14 +411,10 @@
         }
 
         function keyValueListToObject(_list) {
-            var collection = [];
+            var collection = {};
             if (_list !== null) {
                 _list.forEach(function (rowItem) {
-                    var row = {};
-                    rowItem.Value.forEach(function (itemValue) {
-                        row[itemValue.Key] = itemValue.Value;
-                    });
-                    collection.push(row);
+                    collection[rowItem.Key] = rowItem.Value;
                 });
             }
             return collection;
