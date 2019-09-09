@@ -3,7 +3,7 @@
  VERSION: 1.4.0 
  AUTHOR: Ruther John Guevarra 
  GITHUB: https://github.com/terguevarra/
- LATEST BUILD DATE AND TIME: September 09, 2019 03:10 PM PHILIPPINE TIME*/
+ LATEST BUILD DATE AND TIME: September 09, 2019 03:29 PM PHILIPPINE TIME*/
 (function(){
     'use strict';
 
@@ -446,14 +446,10 @@
         }
 
         function keyValueListToObject(_list) {
-            var collection = [];
+            var collection = {};
             if (_list !== null) {
                 _list.forEach(function (rowItem) {
-                    var row = {};
-                    rowItem.Value.forEach(function (itemValue) {
-                        row[itemValue.Key] = itemValue.Value;
-                    });
-                    collection.push(row);
+                    collection[rowItem.Key] = rowItem.Value;
                 });
             }
             return collection;
