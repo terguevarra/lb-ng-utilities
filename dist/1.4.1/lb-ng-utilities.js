@@ -1,3 +1,38 @@
+/*! 
+ PROJECT: lb-ng-utilities 
+ VERSION: 1.4.1 
+ AUTHOR: Ruther John Guevarra 
+ GITHUB: https://github.com/terguevarra/
+ LATEST BUILD DATE AND TIME: September 09, 2019 03:34 PM PHILIPPINE TIME*/
+(function(){
+    'use strict';
+
+    var moduleName = 'lbNgUtilities';
+
+    var appDependencies = [];
+
+    angular.module(moduleName, appDependencies);
+})();
+(function(){
+    'use strict';
+
+    angular
+        .module('lbNgUtilities')
+        .run([function(){
+
+            //To Title Case
+            String.prototype.toTitleCase = function(){
+                return this.replace(/\w\S/g, function(t) { return t.toUpperCase() });
+            }
+
+            //To Sentence Case
+            String.prototype.toSentenceCase = function(){
+                return this.replace(/[a-z]/i, function (letter) {
+                    return letter.toUpperCase();
+                }).trim();
+            }
+        }])
+})();
 (function () {
     'use strict';
 
